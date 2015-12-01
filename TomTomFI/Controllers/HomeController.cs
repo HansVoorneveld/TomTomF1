@@ -16,7 +16,6 @@ namespace TomTomFI.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "TomTom file-info";
-
             return View();
         }
 
