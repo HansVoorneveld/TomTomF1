@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TomTomFI.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="js/Global.asax.cs" Inherits="TomTomFI.MvcApplication" Language="C#" %>
