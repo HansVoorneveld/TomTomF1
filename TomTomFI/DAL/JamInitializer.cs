@@ -28,31 +28,31 @@ namespace TomTomFI.DAL
 
             var Regions = new List<Region>
             {
-            new Region{RegionID=1050,RegionName="Amsterdam",},
-            new Region{RegionID=4022,RegionName="Utrecht",},
-            new Region{RegionID=4041,RegionName="Denhaag",},
-            new Region{RegionID=1045,RegionName="Rotterdam",},
-            new Region{RegionID=3141,RegionName="Eindhoven",},
-            new Region{RegionID=2021,RegionName="Maastricht",},
-            new Region{RegionID=2042,RegionName="Groningen",}
+            new Region{RegionID=1,RegionName="Amsterdam",},
+            new Region{RegionID=2,RegionName="Utrecht",},
+            new Region{RegionID=3,RegionName="Denhaag",},
+            new Region{RegionID=4,RegionName="Rotterdam",},
+            new Region{RegionID=5,RegionName="Eindhoven",},
+            new Region{RegionID=6,RegionName="Maastricht",},
+            new Region{RegionID=7,RegionName="Groningen",}
             };
             Regions.ForEach(s => context.Regions.Add(s));
             context.SaveChanges();
 
             var jams = new List<Jam>
             {
-            new Jam{TrajectID=1,RegionID=1050,JamText="3 kilometer file tussen Amsterdam en Amersfort in bijde richtingen"},
-            new Jam{TrajectID=1,RegionID=4022,JamText="Bla een",},
-            new Jam{TrajectID=1,RegionID=4041,JamText="Bla een",},
-            new Jam{TrajectID=2,RegionID=1045,JamText="Bla een",},
-            new Jam{TrajectID=2,RegionID=3141,JamText="Bla een",},
-            new Jam{TrajectID=2,RegionID=2021,JamText="Bla een",},
-            new Jam{TrajectID=3,RegionID=1050},
+            new Jam{TrajectID=1,RegionID=1,JamText="3 kilometer file tussen Amsterdam en Amersfort in bijde richtingen"},
+            new Jam{TrajectID=1,RegionID=2,JamText="Bla een",},
+            new Jam{TrajectID=1,RegionID=3,JamText="Bla een",},
+            new Jam{TrajectID=2,RegionID=4,JamText="Bla een",},
+            new Jam{TrajectID=2,RegionID=5,JamText="Bla een",},
+            new Jam{TrajectID=2,RegionID=6,JamText="Bla een",},
+            new Jam{TrajectID=3,RegionID=1},
 //            new Jam{TrajectID=4,RegionID=1050,},
-            new Jam{TrajectID=4,RegionID=4022,JamText="Bla twee",},
-            new Jam{TrajectID=5,RegionID=4041,JamText="bla vier",},
-            new Jam{TrajectID=6,RegionID=1045},
-            new Jam{TrajectID=7,RegionID=3141,JamText="Bla vijf",},
+            new Jam{TrajectID=4,RegionID=2,JamText="Bla twee",},
+            new Jam{TrajectID=5,RegionID=3,JamText="bla vier",},
+            new Jam{TrajectID=6,RegionID=4},
+            new Jam{TrajectID=7,RegionID=5,JamText="Bla vijf",},
             
             };
             jams.ForEach(s => context.Jams.Add(s));
